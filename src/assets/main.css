@@ -1,0 +1,46 @@
+@import './base.css';
+
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0; /* 移除自动居中的样式 */
+  padding: 0;
+  font-weight: normal;
+  box-sizing: border-box; /* 确保 padding 不会影响宽度和高度 */
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: flex-start; /* 确保不居中 */
+    align-items: flex-start;     /* 确保不居中 */
+  }
+}
+
+:where(.css-dev-only-do-not-override-19iuou).ant-table-wrapper .ant-table-thead>tr>th, 
+:where(.css-dev-only-do-not-override-19iuou).ant-table-wrapper .ant-table-tbody>tr>td, 
+:where(.css-dev-only-do-not-override-19iuou).ant-table-wrapper tfoot>tr>th, 
+:where(.css-dev-only-do-not-override-19iuou).ant-table-wrapper tfoot>tr>td {
+    position: relative;
+    padding: 8px 8px;
+    overflow-wrap: break-word;
+    text-align: center; 
+}
+
+:where(.css-dev-only-do-not-override-19iuou).ant-table-wrapper .ant-table {
+  font-size: 13px;
+}
